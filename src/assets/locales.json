@@ -1,0 +1,236 @@
+{
+    "updated": "2024-04-06T17:40:44.353Z",
+    "credit": "Copyright (c) 2024 PLANUS Léo",
+    "license": "MIT License",
+    "description": "Locales list and their names",
+    "data": [
+        {
+            "code": "en-US",
+            "name": "English (United States)"
+        },
+        {
+            "code": "en-GB",
+            "name": "English (United Kingdom)"
+        },
+        {
+            "code": "en-CA",
+            "name": "English (Canada)"
+        },
+        {
+            "code": "en-AU",
+            "name": "English (Australia)"
+        },
+        {
+            "code": "en-IN",
+            "name": "English (India)"
+        },
+        {
+            "code": "es-ES",
+            "name": "español (España)"
+        },
+        {
+            "code": "es-MX",
+            "name": "español (México)"
+        },
+        {
+            "code": "es-AR",
+            "name": "español (Argentina)"
+        },
+        {
+            "code": "es-CO",
+            "name": "español (Colombia)"
+        },
+        {
+            "code": "es-CL",
+            "name": "español (Chile)"
+        },
+        {
+            "code": "zh-CN",
+            "name": "中文 (中国)"
+        },
+        {
+            "code": "zh-TW",
+            "name": "中文 (台灣)"
+        },
+        {
+            "code": "zh-HK",
+            "name": "中文 (香港)"
+        },
+        {
+            "code": "zh-SG",
+            "name": "中文 (新加坡)"
+        },
+        {
+            "code": "zh-MY",
+            "name": "中文 (马来西亚)"
+        },
+        {
+            "code": "hi-IN",
+            "name": "हिन्दी (भारत)"
+        },
+        {
+            "code": "hi-PK",
+            "name": "ہندی (پاکستان)"
+        },
+        {
+            "code": "hi-BD",
+            "name": "হিন্দি (বাংলাদেশ)"
+        },
+        {
+            "code": "hi-NP",
+            "name": "हिन्दी (नेपाल)"
+        },
+        {
+            "code": "hi-LK",
+            "name": "හින්දි (ශ්‍රී ලංකා)"
+        },
+        {
+            "code": "bn-BD",
+            "name": "বাংলা (বাংলাদেশ)"
+        },
+        {
+            "code": "bn-IN",
+            "name": "বাংলা (ভারত)"
+        },
+        {
+            "code": "bn-PK",
+            "name": "بنگالی (پاکستان)"
+        },
+        {
+            "code": "bn-GB",
+            "name": "Bengali (United Kingdom)"
+        },
+        {
+            "code": "pt-BR",
+            "name": "português (Brasil)"
+        },
+        {
+            "code": "pt-PT",
+            "name": "português (Portugal)"
+        },
+        {
+            "code": "pt-AO",
+            "name": "português (Angola)"
+        },
+        {
+            "code": "pt-MZ",
+            "name": "português (Moçambique)"
+        },
+        {
+            "code": "pt-GW",
+            "name": "português (Guiné-Bissau)"
+        },
+        {
+            "code": "ru-RU",
+            "name": "русский (Россия)"
+        },
+        {
+            "code": "ru-UA",
+            "name": "русский (Украина)"
+        },
+        {
+            "code": "ru-BY",
+            "name": "русский (Беларусь)"
+        },
+        {
+            "code": "ru-KZ",
+            "name": "русский (Казахстан)"
+        },
+        {
+            "code": "ru-LV",
+            "name": "русский (Латвия)"
+        },
+        {
+            "code": "ar-SA",
+            "name": "العربية (المملكة العربية السعودية)"
+        },
+        {
+            "code": "ar-EG",
+            "name": "العربية (مصر)"
+        },
+        {
+            "code": "ar-DZ",
+            "name": "العربية (الجزائر)"
+        },
+        {
+            "code": "ar-SD",
+            "name": "العربية (السودان)"
+        },
+        {
+            "code": "ar-IQ",
+            "name": "العربية (العراق)"
+        },
+        {
+            "code": "fr-FR",
+            "name": "français (France)"
+        },
+        {
+            "code": "fr-BE",
+            "name": "français (Belgique)"
+        },
+        {
+            "code": "fr-CA",
+            "name": "français (Canada)"
+        },
+        {
+            "code": "fr-CH",
+            "name": "français (Suisse)"
+        },
+        {
+            "code": "fr-LU",
+            "name": "français (Luxembourg)"
+        },
+        {
+            "code": "ur-PK",
+            "name": "اُردُو (پاکستان)"
+        },
+        {
+            "code": "ur-IN",
+            "name": "اردو (ہندوستان)"
+        },
+        {
+            "code": "ur-BD",
+            "name": "اردو (بنگلہ دیش)"
+        },
+        {
+            "code": "ur-AE",
+            "name": "اردو (متحدہ عرب امارات)"
+        },
+        {
+            "code": "id-ID",
+            "name": "Bahasa Indonesia (Indonesia)"
+        },
+        {
+            "code": "id-MY",
+            "name": "Bahasa Indonesia (Malaysia)"
+        },
+        {
+            "code": "id-SG",
+            "name": "Bahasa Indonesia (Singapura)"
+        },
+        {
+            "code": "id-TL",
+            "name": "Bahasa Indonesia (Timor-Leste)"
+        },
+        {
+            "code": "de-DE",
+            "name": "Deutsch (Deutschland)"
+        },
+        {
+            "code": "de-AT",
+            "name": "Deutsch (Österreich)"
+        },
+        {
+            "code": "de-CH",
+            "name": "Deutsch (Schweiz)"
+        },
+        {
+            "code": "de-LU",
+            "name": "Deutsch (Luxemburg)"
+        },
+        {
+            "code": "de-LI",
+            "name": "Deutsch (Liechtenstein)"
+        }
+    ]
+}

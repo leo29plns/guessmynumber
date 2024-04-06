@@ -1,0 +1,39 @@
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: fit-content;
+    gap: .5rem;
+    margin: 0 auto;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.keyboard button {
+    background-color: var(--primary-300);
+    color: var(--primary-50);
+    font-weight: 500;
+    font-size: 2.5rem;
+    aspect-ratio: 1 / 1;
+    padding: .5rem;
+    border: 0;
+}
+
+.keyboard button:disabled {
+    background-color: var(--primary-100);
+}
+
+.keyboard button[data-key="0"] {
+    order: 1;
+}
+
+.keyboard .next {
+    order: 2;
+    grid-column: 2 / 4;
+    aspect-ratio: inherit;
+    font-size: 1.5rem;
+    background-color: inherit;
+    border: 2px solid var(--primary-950);
+    color: inherit;
+}

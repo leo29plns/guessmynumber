@@ -1,0 +1,81 @@
+:root {
+    /* COLORS */
+
+    /* base */
+    --base-0: #ffffff;
+    --base-50: #f2fbf8;
+    --base-950: #0b2823;
+
+    /*  winter */
+    --bermuda-50: #f2fbf8;
+    --bermuda-100: #d4f3e9;
+    --bermuda-200: #a8e7d3;
+    --bermuda-300: #79d5bb;
+    --bermuda-400: #48b99d;
+    --bermuda-500: #2e9e83;
+    --bermuda-600: #237e6b;
+    --bermuda-700: #206557;
+    --bermuda-800: #1d5247;
+    --bermuda-900: #1c453d;
+    --bermuda-950: #0b2823;
+
+
+    /* FONTS */
+
+    /* sizes */
+    --text-base: .875rem; /* p */
+    --text-lg: 1rem; /* h6 */
+    --text-xl: 1.125rem; /* h5 */
+    --text-2xl: 1.25rem; /* h4 */
+    --text-3xl: 1.5rem; /* h3 */
+    --text-4xl: 1.875rem; /* h2 */
+    --text-5xl: 2.25rem; /* h1 */
+
+
+    /* PADDINGS */
+
+    /* glutter */
+    --glutter-normal: 1rem;
+}
+
+@media (min-width: 40rem) {
+    :root {
+        /* PADDINGS */
+
+        /* glutter */
+        --glutter-normal: 2.5rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    :root {
+        /* FONTS */
+
+        /* sizes */
+        --text-base: 1rem; /* p */
+        --text-lg: 1.125rem; /* h6 */
+        --text-xl: 1.25rem; /* h5 */
+        --text-2xl: 1.5rem; /* h4 */
+        --text-3xl: 1.875rem; /* h3 */
+        --text-4xl: 2.25rem; /* h2 */
+        --text-5xl: 3rem; /* h1 */
+
+
+        /* PADDINGS */
+
+        /* glutter */
+        --glutter-normal: 5rem;
+    }
+}
+
+@media (min-width: 64rem) {
+
+}
+
+@media (min-width: 80rem) {
+
+}
+
+@media (min-width: 96rem) {
+
+}

@@ -1,0 +1,56 @@
+body {
+    /* MAIN FONT */
+    font-family: 'Satoshi', sans-serif;
+    color: var(--base-950);
+    background-color: var(--base-50);
+}
+
+/* FONTS SIZES */
+h1 {
+    font-size: var(--text-5xl);
+}
+
+h2 {
+    font-size: var(--text-4xl);
+}
+
+h3 {
+    font-size: var(--text-3xl);
+}
+
+h4 {
+    font-size: var(--text-2xl);
+}
+
+h5 {
+    font-size: var(--text-xl);
+}
+
+h6 {
+    font-size: var(--text-lg);
+}
+
+p {
+    font-size: var(--text-base);
+}
+
+/* BREAKPOINTS */
+@media (min-width: 40rem) {
+
+}
+
+@media (min-width: 48rem) {
+
+}
+
+@media (min-width: 64rem) {
+
+}
+
+@media (min-width: 80rem) {
+
+}
+
+@media (min-width: 96rem) {
+
+}

@@ -1,0 +1,11 @@
+.guessed-display {
+    display: flex;
+    gap: 1rem;
+}
+
+.guessed-display div {
+    font-size: 4.5rem;
+    padding: .25rem .75rem;
+    border-bottom: .25rem solid var(--primary-950);
+    background-color: var(--primary-100);
+}

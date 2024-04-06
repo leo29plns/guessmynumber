@@ -1,0 +1,28 @@
+###> dependencies/dependencies ###
+/node_modules
+###< dependencies/dependencies ###
+
+###> app/production ###
+/dist
+###< app/production ###
+
+###> app/misc ###
+.DS_Store
+###< app/misc ###
+
+###> vite/logs ###
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+###< vite/logs ###
+
+###> node/node ###
+node_modules
+dist
+dist-ssr
+*.local
+###< node/node ###

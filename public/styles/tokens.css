@@ -1,0 +1,14 @@
+:root {
+    /* COLORS */
+    --primary-50: var(--bermuda-50);
+    --primary-100: var(--bermuda-100);
+    --primary-200: var(--bermuda-200);
+    --primary-300: var(--bermuda-300);
+    --primary-400: var(--bermuda-400);
+    --primary-500: var(--bermuda-500);
+    --primary-600: var(--bermuda-600);
+    --primary-700: var(--bermuda-700);
+    --primary-800: var(--bermuda-800);
+    --primary-900: var(--bermuda-900);
+    --primary-950: var(--bermuda-950);
+}
