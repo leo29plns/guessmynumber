@@ -1,30 +1,13 @@
-# React + TypeScript + Vite
+# Guess My Number
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[guessmynumber.xservers.mcb29.ovh](https://guessmynumber.xservers.mcb29.ovh/)
 
-Currently, two official plugins are available:
+Guess My Number reprend le concept du jeu du pendu, mais incorpore d'autres fonctionnalités.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+L'accent a été mis sur l'internationalisation et les traductions.
 
-## Expanding the ESLint configuration
+Une [API](https://guessmynumber-api.xservers.mcb29.ovh/?locale=fr-FR) a été développée afin de fournir du français et de l’anglais. De même l’interface front end propose une traduction en français. Mais si jamais les langues demandées par le client de sont pas disponibles, les jeux de données et l’interface sont traduits par MyMemory, en limitant un maximum le nombre d’appels. 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+L’architecture de l’API permettrait à des contributeurs de rajouter des nombres à deviner, dans leur propre langue, et à d’autres de rajouter des traductions.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Les dates sont formatées selon la locale demandée, permettant ainsi une meilleur intelligibilité de celles-ci.
