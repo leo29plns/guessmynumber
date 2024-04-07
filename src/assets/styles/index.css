@@ -2,7 +2,7 @@ body {
     /* MAIN FONT */
     font-family: 'Satoshi', sans-serif;
     color: var(--base-950);
-    background-color: var(--base-50);
+    background-color: var(--base-0);
 }
 
 /* FONTS SIZES */

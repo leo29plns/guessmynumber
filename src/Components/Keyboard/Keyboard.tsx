@@ -5,7 +5,7 @@ import classes from './Keyboard.module.css';
 
 const Keyboard: React.FC<KeyboardProps> = ({ keys, onGuess, loadSubject }) => {
     const handleClick = (guess: number) => {
-        if (!keys[guess]) {
+        if (keys[guess]) {
             onGuess(guess);
         }
     };
@@ -26,9 +26,9 @@ const Keyboard: React.FC<KeyboardProps> = ({ keys, onGuess, loadSubject }) => {
         };
     }, [keys]);
 
-    const buttons = keys.map((disabled, index) => (
-        <button key={index} data-key={index.toString()} onClick={() => handleClick(index)} disabled={disabled}>
-            {disabled ? <del>{index}</del> : index}
+    const buttons = keys.map((enabled, index) => (
+        <button key={index} data-key={index.toString()} onClick={() => handleClick(index)} disabled={!enabled}>
+            {enabled ? index : <del>{index}</del>}
         </button>
     ));
 

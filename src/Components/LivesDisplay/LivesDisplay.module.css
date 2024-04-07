@@ -5,4 +5,6 @@
     position: absolute;
     bottom: 1rem;
     left: 1rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }

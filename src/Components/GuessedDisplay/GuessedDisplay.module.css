@@ -1,6 +1,7 @@
 .guessed-display {
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 .guessed-display div {

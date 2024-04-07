@@ -8,12 +8,16 @@
 
 .guess h2 {
     font-size: 1.75rem;
+    max-width: 25ch;
+    font-weight: 500;
 }
 
 .site-title {
     position: absolute;
     top: 1rem;
     left: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .main-content {

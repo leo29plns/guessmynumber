@@ -26,7 +26,11 @@ const SuspendedMan: React.FC<SuspendedManProps> = ({ lives, maxLives }) => {
 
     const getSVGPath = (lives: number): string => {
         const imageIndex = Math.round((lives / maxLives) * (imageIndexEnd - imageIndexStart)) + imageIndexStart;
-        const clampedImageIndex = Math.min(Math.max(imageIndex, imageIndexStart), imageIndexEnd);
+        let clampedImageIndex = Math.min(Math.max(imageIndex, imageIndexStart), imageIndexEnd);
+        
+        if (clampedImageIndex === imageIndexStart && lives !== 0) {
+            clampedImageIndex = imageIndexStart + 1;
+        }
     
         return `images/svg/man/life=${clampedImageIndex}.svg`;
     };

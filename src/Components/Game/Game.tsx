@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import Keyboard from './Components/Keyboard/Keyboard';
-import GuessedDisplay from './Components/GuessedDisplay/GuessedDisplay';
-import LivesDisplay from './Components/LivesDisplay/LivesDisplay';
-import { fetchDataFromApi } from './services/api';
-import { translateText } from './services/i18n';
-import { GameProps, GuessedDigit } from './Types/index';
-import SuspendedMan from './Components/SuspendedMan/SuspendedMan';
+import Keyboard from '../Keyboard/Keyboard';
+import GuessedDisplay from '../GuessedDisplay/GuessedDisplay';
+import LivesDisplay from '../LivesDisplay/LivesDisplay';
+import { fetchDataFromApi } from '../../services/api';
+import { translateText } from '../../services/i18n';
+import { GameProps, GuessedDigit } from '../../Types/index';
+import SuspendedMan from '../SuspendedMan/SuspendedMan';
+import confetti from 'canvas-confetti';
 // @ts-ignore
-import classes from './Components/Game/index.module.css';
+import classes from './Game.module.css';
 
 const Game: React.FC<GameProps> = ({ apiEndpoint, initialLives, locale, translateFromWeb }) => {
-    const initialKeys = Array(10).fill(false);
+    const initialKeys = Array(10).fill(true);
 
     const [keys, setKeys] = useState<boolean[]>(initialKeys);
     const [subject, setSubject] = useState<string>('Please wait');
@@ -39,12 +40,30 @@ const Game: React.FC<GameProps> = ({ apiEndpoint, initialLives, locale, translat
         }
     };
 
+    const endGame = () => {
+        const updatedGuessedDigits = guessedDigits.map(digit => ({ ...digit, guessed: true }));
+        const updatedKeys = keys.map(() => false);
+
+        setGuessedDigits(updatedGuessedDigits);
+        setKeys(updatedKeys);
+    };
+
+    const winGame = () => {
+        confetti();
+        endGame();
+    }
+
+    const loseGame = () => {
+        endGame();
+    }
+
     useEffect(() => {
         loadSubject();
     }, [apiEndpoint]);
 
     const handleGuess = (guess: number) => {
         const index = guessedDigits.findIndex(digit => !digit.guessed);
+
         if (guessedDigits[index].value === guess.toString()) {
             const updatedGuessedDigits = [...guessedDigits];
 
@@ -53,16 +72,16 @@ const Game: React.FC<GameProps> = ({ apiEndpoint, initialLives, locale, translat
             setKeys(initialKeys);
 
             if (updatedGuessedDigits.every(digit => digit.guessed)) {
-                loadSubject();
+                winGame();
             }
         } else {
             const updatedKeys = [...keys];
 
-            updatedKeys[guess] = true;
+            updatedKeys[guess] = false;
             setKeys(updatedKeys);
             setLives((prevLives) => {
                 if (lives <= 1) {
-                    loadSubject();
+                    loseGame();
                 }
 
                 return prevLives - 1

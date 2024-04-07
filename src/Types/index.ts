@@ -24,6 +24,10 @@ export interface LivesDisplayProps {
     lives: number;
 }
 
+export interface MessengerProps {
+    message: string | null;
+}
+
 export interface SuspendedManProps {
     lives: number;
     maxLives: number;

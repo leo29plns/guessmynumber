@@ -1,5 +1,5 @@
 import React from 'react';
-import Game from './Game';
+import Game from './Components/Game/Game';
 import { getLocale }  from './services/i18n';
 
 const App: React.FC = () => {
