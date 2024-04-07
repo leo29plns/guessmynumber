@@ -8,10 +8,9 @@ const App: React.FC = () => {
     // @ts-ignore
     const initialLives = import.meta.env.VITE_APP_LIVES as number;
     const locale = getLocale();
-    const translateFromWeb = false;
 
     return (
-        <Game apiEndpoint={apiEndpoint} initialLives={initialLives} locale={locale} translateFromWeb={translateFromWeb} />
+        <Game apiEndpoint={apiEndpoint} initialLives={initialLives} locale={locale} />
     );
 };
 

@@ -2,7 +2,6 @@ export interface GameProps {
     apiEndpoint: string;
     initialLives: number;
     locale: string;
-    translateFromWeb: boolean;
 }
 
 export interface KeyboardProps {
@@ -31,4 +30,9 @@ export interface MessengerProps {
 export interface SuspendedManProps {
     lives: number;
     maxLives: number;
+}
+
+export interface Locale {
+    name: string;
+    code: string;
 }

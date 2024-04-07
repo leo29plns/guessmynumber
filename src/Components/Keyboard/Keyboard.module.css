@@ -18,6 +18,8 @@
     aspect-ratio: 1 / 1;
     padding: .5rem;
     border: 0;
+    transition: .125s ease-out;
+    transition-property: transform, background-color;
 }
 
 .keyboard button:disabled {
@@ -36,4 +38,43 @@
     background-color: inherit;
     border: 2px solid var(--primary-950);
     color: inherit;
+    transition: .125s ease-out;
+    transition-property: border, transform, color;
+}
+
+
+
+@media (hover: hover) and (pointer: fine) {
+    .keyboard button:hover {
+        transform: scale(1.05);
+    }
+
+    .keyboard button:active {
+        transform: scale(1);
+    }
+
+    .keyboard .next:hover {
+        border: 0 solid;
+        background-color: var(--primary-950);
+        color: var(--primary-50);
+    }
+    
+    .keyboard .next:active {
+        order: 2;
+        grid-column: 2 / 4;
+        aspect-ratio: inherit;
+        font-size: 1.5rem;
+        background-color: inherit;
+        border: 2px solid var(--primary-950);
+        color: inherit;
+    }
+}
+
+.keyboard button:focus-visible {
+    transform: scale(1.05);
+}
+
+.keyboard .next:focus-visible {
+    border: 0 solid;
+    background-color: var(--primary-50);
 }

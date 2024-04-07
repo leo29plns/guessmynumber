@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { KeyboardProps } from '../../Types/index';
+import { t } from '../../services/i18n';
 // @ts-ignore
 import classes from './Keyboard.module.css';
 
@@ -35,7 +36,7 @@ const Keyboard: React.FC<KeyboardProps> = ({ keys, onGuess, loadSubject }) => {
     return (
         <div className={classes['keyboard']}>
             {buttons}
-            <button className={classes['next']} onClick={loadSubject}>Next</button>
+            <button className={classes['next']} onClick={loadSubject}>{t('game.next')}</button>
         </div>
     );
 };

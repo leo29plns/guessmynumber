@@ -1,26 +1,19 @@
 import React, { useRef, useEffect } from 'react';
 import { SuspendedManProps } from '../../Types/index';
-// @ts-ignore
 import classes from './SuspendedMan.module.css';
 
 const SuspendedMan: React.FC<SuspendedManProps> = ({ lives, maxLives }) => {
-    const canvasRef = useRef<HTMLCanvasElement>(null);
+    const imageRef = useRef<HTMLImageElement>(null);
     const imageIndexStart = 1;
     const imageIndexEnd = 5;
 
     useEffect(() => {
-        const canvas = canvasRef.current;
-        const ctx = canvas?.getContext('2d');
+        const image = imageRef.current;
 
-        if (ctx && canvas) {
-            const image = new Image();
-            const svgPath = getSVGPath(lives);
-            image.src = svgPath;
+        if (image) {
+            const yPos = image.parentElement!.offsetHeight - image.offsetHeight - (lives * (image.parentElement!.offsetHeight - image.offsetHeight)) / maxLives;
 
-            image.onload = () => {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.drawImage(image, 0, 0);
-            };
+            image.style.transform = `translate3D(0, ${yPos}px, 0)`;
         }
     }, [lives]);
 
@@ -36,8 +29,8 @@ const SuspendedMan: React.FC<SuspendedManProps> = ({ lives, maxLives }) => {
     };
 
     return (
-        <div>
-            <canvas ref={canvasRef} width={'400px'} height={window.innerHeight} className={classes['suspended-man']} />
+        <div className={classes['suspended-man-canvas']}>
+            <img ref={imageRef} src={getSVGPath(lives)} alt="" className={classes['suspended-man']} />
         </div>
     );
 };

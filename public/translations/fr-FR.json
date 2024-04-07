@@ -1,0 +1,13 @@
+{
+    "updated": "2024-04-06T17:40:44.353Z",
+    "credit": "Copyright (c) 2024 PLANUS Léo",
+    "license": "MIT License",
+    "description": "(fr-FR) Messages translations",
+    "data": {
+        "game": {
+            "next": "Suivant",
+            "fail": "Vous avez perdu",
+            "win": "Vous avez gagné"
+        }
+    }
+}
